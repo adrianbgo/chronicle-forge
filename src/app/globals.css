@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --midnight-black: #010203;
-  --blood-red: #800000;
-  --steel-gray: #708090;
-  --dusty-rose: #b38b6d;
-  --pale-lavender: #e6e6fa;
+.btn {
+  @apply bg-steel text-white font-bold py-2 px-4 rounded;
 }
 
-body {
-  color: var(--midnight-black);
-  background-color: var(--pale-lavender);
+.btn-ghost {
+  @apply bg-transparent text-steel font-semibold py-2 px-4;
+}
+
+.navbar {
+  @apply flex items-center justify-between flex-wrap bg-lavender p-6;
 }
