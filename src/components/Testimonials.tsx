@@ -14,23 +14,25 @@ const Testimonials: React.FC = () => {
         return () => clearInterval(interval);
     }, [])
     return (
-        <div className="max-w-4xl mx-auto p-4 w-auto">
-            <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-dark my-4 text-center">Testimonials</h2>
-            <Carousel
-                showArrows={false}
-                showThumbs={false}
-                showStatus={false}
-                selectedItem={currentSlide}
-                autoPlay={false}
-                infiniteLoop={true}
-            >
-                {testimonials.map((testimonial, index) => (
-                    <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
-                        <p className="text-lg font-semibold">{testimonial.quote}</p>
-                        <p className="mt-2">{`- ${testimonial.name}`}</p>
-                    </div>
-                ))}
-            </Carousel>
+        <div className="container">
+            <div className="max-w-4xl mx-auto p-4 w-auto">
+                <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-dark my-4 text-center">Testimonials</h2>
+                <Carousel
+                    showArrows={false}
+                    showThumbs={false}
+                    showStatus={false}
+                    selectedItem={currentSlide}
+                    autoPlay={false}
+                    infiniteLoop={true}
+                >
+                    {testimonials.map((testimonial, index) => (
+                        <div key={index} className="bg-white p-4 rounded-lg shadow-lg">
+                            <p className="text-lg font-semibold">{testimonial.quote}</p>
+                            <p className="mt-2">{`- ${testimonial.name}`}</p>
+                        </div>
+                    ))}
+                </Carousel>
+            </div>
         </div>
     )
 }

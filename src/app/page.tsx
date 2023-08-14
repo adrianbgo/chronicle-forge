@@ -1,8 +1,8 @@
 import AboutMe from '@/components/AboutMe'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
-import Image from 'next/image'
 import Testimonials from '@/components/Testimonials'
+import CTA from '@/components/CTA'
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <AboutMe />
       <Services />
       <Testimonials />
+      <CTA />
     </main>
   )
 }
