@@ -2,6 +2,9 @@ import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { config, dom } from '@fortawesome/fontawesome-svg-core'
+config.autoAddCss = false;
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <style>{dom.css()}</style>
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
