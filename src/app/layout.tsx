@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { config, dom } from '@fortawesome/fontawesome-svg-core'
+import Footer from '@/components/Footer'
 config.autoAddCss = false;
 
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )

@@ -3,6 +3,10 @@ import Hero from '@/components/Hero'
 import Services from '@/components/Services'
 import Testimonials from '@/components/Testimonials'
 import CTA from '@/components/CTA'
+import LatestPosts from '@/components/LatestPosts'
+import BookingInfo from '@/components/BookingInfo'
+import NewsletterSignup from '@/components/NewsletterSignup'
+import ContactInfo from '@/components/ContactInfo'
 
 export default function Home() {
   return (
@@ -12,6 +16,10 @@ export default function Home() {
       <Services />
       <Testimonials />
       <CTA />
+      <LatestPosts />
+      <BookingInfo />
+      <NewsletterSignup />
+      <ContactInfo />
     </main>
   )
 }
